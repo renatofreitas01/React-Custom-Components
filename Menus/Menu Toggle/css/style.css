@@ -1,0 +1,128 @@
+*{
+    text-decoration: none;
+}
+body{
+    background-color: darkorchid;
+    min-width: 500px;
+    min-height: 500px;
+}
+#menu{
+    width: 210px;
+    height: 240px;
+    border: 1px solid white;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+#menu li{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    list-style: none;
+    color: rgb(99, 99, 99);
+}
+li a{
+    color: rgb(99, 99, 99);
+}
+li:hover{
+    background-color: #dfdfdf;
+    color: white;
+    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-menu{
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    background-color: white;
+}
+#nav{
+    transition: 0.3s;
+    opacity: 0;
+}
+#nav.active{
+    transition: 1.2s;
+    opacity: 1;
+    display: flex;
+    margin-top: 15px;
+}
+#hamburguer{
+    transition: 0.4s;
+    width: 25px;
+    height: 5px;
+    background-color: darkorchid;
+    border-radius: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20%;
+}
+#hamburguer2{
+    width: 25px;
+    height: 5px;
+    background-color: darkorchid;
+    border-radius: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+}
+#hamburguer3{
+    transition: 0.4s;
+    width: 25px;
+    height: 5px;
+    background-color: darkorchid;
+    border-radius: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+}
+#hamburguer.active{
+    transition: 0.4s;
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: darkorchid;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    margin-top: 45%;
+    margin-left: 5%;
+    margin-right: auto%;
+}
+#hamburguer3.active{
+    transition: 0.4s;
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: darkorchid;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    margin-top: 45%;
+    margin-left: 5%;
+    margin-right: auto;
+}
+#hamburguer2.active{
+    display: none;
+}
+#arrow.active{
+    transition: 0.3s;
+    opacity: 1;
+    display: inline-block; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #ffffff;
+    margin-left: 13%;
+    margin-right: auto;
+    margin-top: 90%;
+}
